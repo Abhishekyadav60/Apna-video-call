@@ -1,0 +1,369 @@
+/* .landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+
+}
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.landingMainContainer>div:nth-child(1) {
+  font-size: 2.2rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] {
+  background: #D97500;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 1.9rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.landingMainContainer>div:nth-child(2) img {
+  height: 70vh;
+  width: auto;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+} */
+
+/* Lobby page */
+.lobby-page {
+  /* background: #010430; */
+}
+
+/* Your Video */
+.videoPage {
+  font-size: 35px;
+  margin-top: 12px;
+}
+.userLabel {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 12px;
+}
+
+.connect-btn {
+    align-self: center;
+}
+
+.video-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.your-video {
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .your-video {
+    width: 100%;
+    padding: 0 12px;
+  }
+}
+
+
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/background.png") no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+/* NAVIGATION */
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+.landingPageContainer .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+/* MAIN LANDING SECTION */
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+  gap: 2rem;
+}
+
+.landingMainContainer > div:nth-child(1) {
+  font-size: 2.2rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role='button'] {
+  background: #D97500;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin-top: 1.9rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role='button'] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  height: 70vh;
+  width: auto;
+  max-width: 100%;
+}
+
+/* NAV BAR */
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+}
+
+/* MEET SECTION */
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* ========================= */
+/* RESPONSIVE MEDIA QUERIES */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .landingMainContainer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) {
+    font-size: 1.8rem;
+  }
+
+  .landingMainContainer > div:nth-child(2) img {
+    height: auto;
+    width: 70%;
+    margin-top: 2rem;
+  }
+
+  .meetContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .rightPanel > img {
+    width: 60vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .landingPageContainer nav {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    position: relative;
+    display: block;
+  }
+
+  .navlist {
+    display: flow;
+  }
+
+  .landingPageContainer nav h2 {
+    font-size: 1rem;
+  }
+
+  .landingPageContainer nav .navlist {
+        position: absolute;
+        background-color: #181818;
+        gap: 1rem;
+        font-size: 0.9rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 39px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        top: 62px;
+        right: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .landingMainContainer > div:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) div[role='button'] a {
+    font-size: 1.2rem;
+  }
+
+  .rightPanel > img {
+    width: 80vw;
+  }
+
+  /* CONNECT USER */
+  .videoPage {
+    font-size: 32px;
+    /* padding-left: 5rem; */
+    margin-top: 2rem;
+  }
+
+  /* .userLabel {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 12px;
+  }
+
+  .connect-btn {
+    align-self: center;
+  } */
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .landingMainContainer {
+    padding-inline: 1rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) {
+    font-size: 1.2rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) div[role='button'] {
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
+    margin-left: 2rem;
+  }
+
+  .landingMainContainer > div:nth-child(1) div[role='button'] a {
+    font-size: 1rem;
+  }
+
+  .rightPanel > img {
+    width: 90vw;
+  }
+}

@@ -8,16 +8,12 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import HomeIcon from '@mui/icons-material/Home';
-
 import { IconButton } from '@mui/material';
+
 export default function History() {
 
-
     const { getHistoryOfUser } = useContext(AuthContext);
-
     const [meetings, setMeetings] = useState([])
-
-
     const routeTo = useNavigate();
 
     useEffect(() => {
@@ -46,7 +42,6 @@ export default function History() {
 
     return (
         <div>
-
             <IconButton onClick={() => {
                 routeTo("/home")
             }}>
@@ -57,11 +52,8 @@ export default function History() {
                     return (
 
                         <>
-
-
                             <Card key={i} variant="outlined">
-
-
+                                
                                 <CardContent>
                                     <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                                         Code: {e.meetingCode}
@@ -70,13 +62,8 @@ export default function History() {
                                     <Typography sx={{ mb: 1.5 }} color="text.secondary">
                                         Date: {formatDate(e.date)}
                                     </Typography>
-
                                 </CardContent>
-
-
                             </Card>
-
-
                         </>
                     )
                 }) : <></>

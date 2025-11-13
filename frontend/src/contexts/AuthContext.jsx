@@ -8,17 +8,14 @@ import server from "../environment";
 export const AuthContext = createContext({});
 
 const client = axios.create({
-    baseURL: `${server}/api/v1/users`
+    baseURL: "http://localhost:8000/api/v1/users"
 })
 
 
 export const AuthProvider = ({ children }) => {
 
     const authContext = useContext(AuthContext);
-
-
     const [userData, setUserData] = useState(authContext);
-
 
     const router = useNavigate();
 
@@ -29,7 +26,6 @@ export const AuthProvider = ({ children }) => {
                 username: username,
                 password: password
             })
-
 
             if (request.status === httpStatus.CREATED) {
                 return request.data.message;

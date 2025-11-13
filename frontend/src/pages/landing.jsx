@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import {X, Menu} from 'lucide-react'
 import "../App.css"
 import { Link, useNavigate } from 'react-router-dom'
+
+
 export default function LandingPage() {
     const [isOpen, setIsOpen] = useState(false);
     const [md, setMd] = useState(true);
@@ -38,14 +40,15 @@ export default function LandingPage() {
                 </div>
                 {(md || isOpen) && <div className='navlist'>
                     <p onClick={() => {
-                        router("/aljk23")
+                        router("/Guest")
                     }}>Join as Guest</p>
+                    
                     <p onClick={() => {
                         router("/auth")
                     }}>Register</p>
+
                     <div onClick={() => {
                         router("/auth")
-
                     }} role='button'>
                         <p>Login</p>
                     </div>

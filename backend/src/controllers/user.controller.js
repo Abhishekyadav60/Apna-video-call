@@ -4,8 +4,9 @@ import bcrypt, { hash } from "bcrypt"
 
 import crypto from "crypto"
 import { Meeting } from "../models/meeting.model.js";
-const login = async (req, res) => {
 
+
+const login = async (req, res) => {
     console.log(req.body)
     const { username, password } = req.body;
 
@@ -27,7 +28,7 @@ const login = async (req, res) => {
 
             user.token = token;
             await user.save();
-            return res.status(httpStatus.OK).json({ token: token })
+            return res.status(httpStatus.OK).json({ token: token, message: "Login Successful" })
         } else {
             return res.status(httpStatus.UNAUTHORIZED).json({ message: "Invalid Username or password" })
         }

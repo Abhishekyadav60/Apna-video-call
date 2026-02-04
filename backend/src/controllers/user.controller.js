@@ -49,7 +49,10 @@ const register = async (req, res) => {
             return res.status(httpStatus.FOUND).json({ message: "User already exists" });
         }
 
-        const hashedPassword = await bcrypt.hash(password, 10);
+        // const hashedPassword = await bcrypt.hash(password, 10);
+        // ---------------------------------------------------------------//
+        const hashedPassword = await bcrypt.hash(password, 8); 
+
 
         const newUser = new User({
             name: name,

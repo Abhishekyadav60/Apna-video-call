@@ -29,6 +29,7 @@ export default function LandingPage() {
     const router = useNavigate();
 
     return (
+        <>
         <div className='landingPageContainer'>
             <nav>
                 <div className="top">
@@ -72,5 +73,6 @@ export default function LandingPage() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
